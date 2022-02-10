@@ -1,0 +1,139 @@
+body{
+    color: rgb(61, 61, 61);
+    background-image:  linear-gradient(rgb(236, 225, 225), rgb(253, 238, 238));
+}
+.info{
+    display: flex;
+    margin-top: 50px ;
+    margin-bottom: 100px;
+}
+a{
+    text-decoration: none;
+}
+
+/* detail */
+.detail{
+    width: 45%;
+    height: 650px;
+    margin-left: 10%;
+    padding-left: 20px;
+}
+.detail h1{
+    border-left: rgb(82, 80, 80) solid 5px;
+    background-color: rgba(216, 215, 215, 0.7);
+    margin-right: 25px;
+    font-size: 30px;
+    
+}
+.detail form .block{
+    height: 70px;
+    width: 100%;
+}
+.detail form .block label{
+    display: inline-block;
+    margin-top: 15px;
+}
+.detail form .block input{
+    width: 75%;
+    height: 70%;
+    float: right;
+    margin-right: 25px;
+    padding-left: 5px;
+}
+.detail form button{
+    float: right;
+    width: 100px;
+    height: 40px;
+    margin-right: 25px;
+    background-color: #213579;
+    border-color: white;
+    color: white;
+    opacity: 0.8;
+}
+.detail form button:hover{
+    opacity: 1;
+    transition: all .5s;
+}
+.detail form label{
+    font-size: large;
+}
+
+/* dif */
+.dif{
+    display: inline-block;
+    width: 30%;
+    height: 650px;
+    margin-left: 50px;
+    padding-left: 20px;
+}
+.dif img{
+    height: 300px;
+    width: 100%;
+}
+.dif > h3{
+    margin-top: 50px;
+    text-align: center;
+    display: block;
+    font-size: large;
+    cursor: pointer;
+}
+.dif > h3:hover{
+    font-size: x-large;
+    color: red;
+    transition: all 0.3s;
+}
+.report{
+    text-align: center;
+    display:none;
+    position: relative;
+}
+.report h1{
+    border-left: rgb(82, 80, 80) solid 5px;
+    padding-left: 10px;
+    background-color: rgba(216, 215, 215, 0.7);
+}
+.report p{
+    font-size: large;
+    cursor: pointer;
+}
+.report p:hover{
+    color: red;
+    transition: all 0.2s;
+}
+.report h3{
+    width: 70%;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 5px;
+    margin-top: 300px;
+    box-sizing: border-box;
+    background-color: rgb(228, 226, 226);
+    cursor: pointer;
+}
+.report h3:hover{
+    background-color:rgb(143, 139, 139);
+    color: white;
+    transition: all 0.5s;
+}
+.report h4, .report p{
+    font-size: large;
+    color:rgb(143, 139, 139);
+}
+
+.logout{
+    margin: 0 auto;
+    width: 60%;
+    height: 60px;
+    border:rgb(228, 16, 16) solid 1px;
+    margin-top: 50px;
+    text-align: center;
+    background: rgb(207, 29, 29);
+    color: white;
+    opacity: 0.8;
+    border-radius: 5px;
+    padding-top: 10px;
+}
+.logout:hover{
+    opacity: 1;
+}

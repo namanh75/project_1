@@ -1,0 +1,89 @@
+/* #Resets
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit; }
+
+
+
+/* #Universal and Default Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+  	color: #ddd;
+  	font-family: "Open Sans", sans-serif;
+  	font-size: 14px;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+a {text-decoration: none;}
+h1 {
+	font-size: 40px;
+  	font-weight: 700;
+	margin-bottom: 20px;
+  	margin-top: 20px;
+}
+h2 {
+	font-size: 15px;
+  	font-weight: 600;
+	margin-bottom: 30px;
+  	margin-top: 10px;
+}
+.container {
+	margin: auto;
+	width: 940px;
+}
+.ul-reset {
+	padding-left: 400px;
+    margin-bottom: 0;
+	list-style: none;
+}
+
+
+
+/* #Navigation Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+nav {
+	background: linear-gradient(#8f8686, #5a5555) ;
+	font-size: 0;
+	position: relative;
+    display: flex;
+}
+nav h1 a :hover{
+	color: white;
+}
+nav > ul > li {
+	display: inline-block;
+  	font-size: 14px;
+  	padding: 0 15px;
+  	position: relative;
+}
+nav > ul > li > a {
+	color: #fff;
+  	display: block;
+  	position: relative;
+  	padding: 20px 0;
+  	border-bottom: 3px solid transparent;
+}
+nav > ul > li:hover > a {
+	color: #69aae0; 
+  	border-bottom: 3px solid #69aae0;
+}
+nav > ul {
+	display:block;
+    margin-left: 500px;
+	margin-right: auto;
+}
+nav > h1 {
+    width: 400px;
+}
+nav > h1 > a{
+    color: rgb(255, 244, 244);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul.container.ul-reset{
+    margin-left: 00px;
+}
+nav > h1 > a:hover {
+	color: white;
+}

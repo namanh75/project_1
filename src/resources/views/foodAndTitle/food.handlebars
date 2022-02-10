@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{foods.name}}</title>
+    <link rel="stylesheet" href="/css/food.css">
+</head>
+
+<body>
+
+
+    <div class="block">
+        <div class="info">
+            <h1><i>{{foods.name}}</i></h1>
+            <h3 class="title"><i>Đánh giá ngay</i></h3>
+            <img src="/image/food/{{foods.id}}.jpg" alt="Hình ảnh món ăn">
+            <p><b>Tên (Name of food) : </b>{{foods.name}}</p>
+            <p><b>Xuất xứ (Original) : </b>{{foods.origin}}</p>
+            <p><b>Mô tả món ăn (Description) : </b>{{foods.description}}</p>
+        </div>
+
+        <div class="follow">
+            <h2><i>Theo dõi chúng tôi</i> </h2>
+            <a href="https://www.facebook.com/" target="_blank">
+                <div class="face">
+                    <h3>FaceBook</h3>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/" target="blank">
+                <div class="ins">
+                    <h3>Instgram</h3>
+                </div>
+            </a>
+            <a href="https://www.twitter.com/" target="blank">
+                <div class="tw">
+                    <h3>Twitter</h3>
+                </div>
+            </a>
+        </div>
+
+
+    </div>
+    <div class="review">
+        <h2>BÌNH LUẬN (COMMENT)</h2>
+        {{#each reviews}}
+        <div class="comt">
+            <h3><i>{{this.username}} - {{this.updatedAt}}</i></h3>
+            <h4>{{this.content}}</h4>
+        </div>
+        {{/each}}
+
+        <form action="/food/{{foods.name}}" method="post" title="Thêm review">
+            <input type="text" placeholder="Thêm Review" name="content">
+            <br><br>
+            <button type="submit">THÊM</button>
+        </form>
+        <br><br><br><br><br>
+    </div>
+    <h3 class="end"><i>Diễn Đàn Review Ẩm Thực</i></h3>
+    <script src="/js/food.js"></script>
+</body>
+
+</html>

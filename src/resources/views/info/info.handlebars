@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/css/info.css">
+
+</head>
+
+<body>
+    <div class="info">
+        <div class="detail">
+            <h1>THÔNG TIN NGƯỜI DÙNG</h1>
+            <form action="/info?_method=PUT" method="POST">
+                <div class="block">
+                    <label for=""><b>Tên đăng nhập</b> </label>
+                    <input type="text" id="account" name="account" value="{{userdata.account}}" disabled="true"><br>
+                </div>
+                <div class="block">
+                    <label for=""><b>Mật khẩu</b> </label>
+                    <input type="password" id="password" name="password" value="{{userdata.password}}">
+                </div>
+                <div class="block">
+                    <label for=""><b>Họ và tên</b> </label>
+                    <input type="text" id="name" name="name" value="{{userdata.name}}">
+                </div>
+                <div class="block">
+                    <label for=""><b>Tuổi</b> </label>
+                    <input type="text" id="age" name="age" value="{{userdata.age}}">
+                </div>
+                <div class="block">
+                    <label for=""><b>Giới tính</b> </label>
+                    <input type="text" id="gender" name="gender" value="{{userdata.gender}}">
+                </div>
+                <div class="block">
+                    <label for=""><b>Quê quán</b> </label>
+                    <input type="text" id="origin" name="origin" value="{{userdata.origin}}">
+                </div>
+                <div class="block">
+                    <label for=""><b>Email</b></label>
+                    <input type="email" id="email" name="email" value="{{userdata.email}}">
+                </div>
+                <button type="submit">Lưu</button>
+            </form>
+        </div>
+
+        <div class="dif">
+            <img src="/image/logo2.jpg" alt="">
+            <h3><i>Báo cáo tài khoản</i></h3>
+            <div class="report">
+                <h1>REPORT</h1>
+                <h4><i>Bạn đang nghi ngờ tài khoản của mình bị đánh cắp</i> </h4>
+                <p><i><b>Báo cáo ngay</b> </i> </p> <br><br><br>
+                <h3>Quay lại</h3>
+            </div>
+            <a href="/login/logout">
+                <div class="logout">
+                    <h3>Đăng xuất</h3>
+                </div>
+            </a>
+
+
+        </div>
+    </div>
+    <script src="/js/info.js"></script>
+
+</body>
+</html>

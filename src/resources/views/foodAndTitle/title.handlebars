@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/title.css">
+</head>
+
+<body>
+    <h1><i>Chọn một chủ đề và xem có gì nào</i></h1>
+    <div class="block-1">
+        {{#each titles}}
+        <a href="/food?title={{this.name}}" class="title">
+            <img src="/image/titles/{{this.title}}.jpg" alt="ảnh">
+            <h2><i>{{this.name}}</i></h2>
+            <h4><i>{{this.description}}</i></h4>
+        </a>
+        {{/each}}
+    </div>
+    <h1 class="end"><i>Diễn Đàn Review Ẩm Thực</i></h1>
+</body>
+
+</html>

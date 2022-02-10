@@ -1,0 +1,158 @@
+body{
+    font-family: inherit;
+    background-image:  linear-gradient(rgb(202, 193, 193), rgb(253, 238, 238));
+    background-repeat: no-repeat;
+    color:rgb(80, 76, 76);
+    text-align: center;
+}
+/* feedback */
+.fb{
+    margin-top:50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 500px;
+    display: flex;
+}
+.fb h4{
+    opacity: 0;
+    font-size: larger;
+}
+.fb .block-btn{
+    width: 145px;
+    height: 145px;
+    margin-left: 30%;
+    border: solid 3px rgb(163, 152, 152);
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-radius: 50%;
+    
+}
+.block-btn:hover{
+    border: solid 3px rgb(80, 76, 76);
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;    
+    /* animation: spinner 2s 1 ease; */
+}
+.fb .btn{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 10px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    border: solid 3px rgb(202, 193, 193);
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+.btn:hover{
+    border: solid 3px rgb(80, 76, 76);
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;    
+    /* animation: spinner 2s 1 ease; */
+}
+.fb a{
+    text-decoration: none;
+    color: rgb(168, 100, 100);
+    
+}
+/* .system */
+.system{
+    border: 3px solid rgb(167, 160, 160);
+    width: 30%;
+    height: 370px;
+    padding-top: 20px;
+    margin-left: 8%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+.system:hover{
+    height:320px;
+    transform: scale(1.3);
+    padding-top: 0px;
+    border: solid 3px rgb(80, 76, 76);
+    transition: all 0.5s;
+}
+/* .service */
+.service{
+    border: 3px solid rgb(167, 160, 160);
+    width: 30%;
+    height: 370px;
+    padding-top: 20px;
+    margin-left: 20%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    position: relative;
+    z-index: 2;
+}
+.service:hover{
+    height: 320px;
+    transform: scale(1.3);
+    padding-top: 0px;
+    border: solid 3px rgb(80, 76, 76);
+    transition: all 0.5s;  
+}
+@keyframes spinner {
+    from {
+        border: solid 3px rgb(163, 152, 152);
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        transform: rotate(0deg);
+    }
+    to{
+        border: solid 3px rgb(80, 76, 76);
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;   
+        transform: rotate(360deg);
+    }
+}
+
+/* form  */
+.form{
+    top: 100px;
+    width: 700px;
+    border: solid 1px rgb(170, 167, 167);
+    position: fixed;
+    display: none;
+    background:white;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    border-radius: 10px;
+}
+form{
+    width: 600px;
+    
+    margin-left: 50px;
+    margin-top: 20px;
+}
+form input{
+    border: solid 1px rgb(170, 167, 167);
+    width: 600px;
+    height: 50px;
+}
+form input[type="text"]{
+    margin-left: 0%;
+}
+.submit{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.submit button{
+    position: relative;
+    left: 200px;
+    width: 100px;
+    height: 40px;
+}
+.submit button:nth-child(2){
+    left: 200px;
+}
